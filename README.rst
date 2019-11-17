@@ -46,13 +46,16 @@ Extraire le texte :
 --------------------------------------------------------------
 
 Analyse texte :
-	Lemmatisation
-	Bigram/Trigram
-	Tokennisation
-	Stopwords
-	Fréquences terme/document
-	Normalisation
+	Tokenisation
+		Stopwords
+		Lemmatisation
+		Stemming
+		#Bigram/Trigram > graph of words
+	Fréquences terme/document > TF
+	Normalisation > IDF
+	Similarité cosinus
 { input : texte brute | output : dico de mots
+# term frequency : nb occurence terme texte/max occurence de tous les textes > TF IDF
 
 --------------------------------------------------------------
 
