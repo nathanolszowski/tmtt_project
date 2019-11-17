@@ -20,8 +20,11 @@ information on PyScaffold see https://pyscaffold.org/.
 
 
 Structure TTMT PROJECT
-# package/subpackage de fonctions
 ======================
+
+# package/subpackage de fonctions
+
+--------------------------------------------------------------
 
 General - Config :
 	Vérifier le chemin d'un fichier/dico

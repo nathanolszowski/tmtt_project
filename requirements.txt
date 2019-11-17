@@ -11,19 +11,27 @@
 # Add your pinned requirements so that they can be easily installed with:
 # pip install -r requirements.txt
 # Remember to also add them in setup.cfg but unpinned.
-# 
+#
+# /!\ Inspect more recents libs for pdf extraction and pathlib /!\
+#
+#
+#
 # ============ Generals ============
 #
 # python>=3.6.8
 # env==8.28 	
 # pyscaffold==3.2.3
-# Sphinx==
+# Sphinx==2.2.1
 #
 # ============ Program ============
 #
-#
-#
-#
+# nltk==3.4.5
+# pandas==0.25.3
+# numpy==1.17.4
+# pythondateutil==2.8.1
+# PyPDF2/pikepdf
+# PDFMiner==20191103
+# pathlib/pathlib2
 #
 # ============ Tests ============
 #
