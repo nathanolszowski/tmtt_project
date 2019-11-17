@@ -27,18 +27,18 @@ Structure TTMT PROJECT
 --------------------------------------------------------------
 
 General - Config :
-	Vérifier le chemin d'un fichier/dico
-	Vérifier accès à JAVA file
-	Accès BDD
+	- Vérifier le chemin d'un fichier/dico
+	- Vérifier accès à JAVA file
+	- Accès BDD
 
 --------------------------------------------------------------
 
 Extraire le texte :
-	Repérage extension fichier
-	Extraction pdf (test avec les différents extracteur)
-	Extraction texte
-	Extraction nombre pages
-	Extraction metadata/infopdf (si existe)
+	- Repérage extension fichier
+	- Extraction pdf (test avec les différents extracteur)
+	- Extraction texte
+	- Extraction nombre pages
+	- Extraction metadata/infopdf (si existe)
 # échec lecture pdf crypté
 # échec PDF image
 { input : fichier | output : texte brute
