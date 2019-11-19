@@ -13,4 +13,6 @@
 import config as cfg
 
 
+print('Hello World')
+print('\n')
 cfg.test_tous_chemins(cfg.chemins)  # Test de la configuration

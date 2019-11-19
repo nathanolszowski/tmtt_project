@@ -1,9 +1,9 @@
-# ----------------------------------------
-# -- FICHIER DE CONFIGURATIONS --
-# ----------------------------------------
-
+"""
+----------------------------------------
+------- FICHIER DE CONFIGURATIONS ------
+----------------------------------------
 # Ce fichier configure le projet TMTT.
-
+"""
 
 import os
 # import time
