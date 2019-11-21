@@ -43,27 +43,6 @@ def test_tous_chemins(cheminsRepo):
     :param : <dict> Dictionnaire des chemins
     :return : <str> Validation ou non test_chemin()
     """
-    for item in cheminsRepo.items():
-        test_chemin(str(item))
+    for k, v in cheminsRepo.items():
+        test_chemin(str(k))
         print('\n')
-
-
-"""
-Fonctions gestion des temps de traitements
-"""
-
-"""
-def chrono(ChronoS):
-    q, s = divmod(ChronoS, 60)
-    h, m = divmod(q, 60)
-    j, r = divmod(h, 24)
-    if j > 0:
-        TempsRestantJHMS = "%d_j %d_h %d_min %d_s" % (j, h, m, s)
-    elif h > 0:
-        TempsRestantJHMS = "%d_h %d_min %d_s" % (h, m, s)
-    elif m > 0:
-        TempsRestantJHMS = "%d_min %d_s" % (m, s)
-    else:
-        TempsRestantJHMS = "%d_s" % (s)
-    return TempsRestantJHMS
-"""

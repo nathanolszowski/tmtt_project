@@ -22,10 +22,11 @@
 # env==8.28 	
 # pyscaffold==3.2.3
 # Sphinx==2.2.1
+# progress==1.5
 #
 # ============ Program ============
 #
-# nltk==3.4.5
+# nltk==3.4.5 + data
 # pandas==0.25.3
 # numpy==1.17.4
 # pythondateutil==2.8.1
