@@ -25,14 +25,17 @@
 # progress==1.5
 #
 # ============ Program ============
+# error ReadImage 412 > etc/ImageMagick-6/policy
 #
-# nltk==3.4.5 + data
+#
+# nltk==3.4.5 + nltkdata
 # pandas==0.25.3
 # numpy==1.17.4
 # pythondateutil==2.8.1
-# PyPDF2/pikepdf
+# PyPDF2==
 # PDFMiner==20191103
-# pathlib/pathlib2
+# pytesseract==0.3.0
+# sudo apt install tesseract-ocr==4.0
 #
 # ============ Tests ============
 #

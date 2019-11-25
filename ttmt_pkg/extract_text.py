@@ -15,6 +15,12 @@ Extraire le texte :
 """
 
 import os
+from wand.image import Image as Img
+try:
+    from PIL import Image
+except ImportError:
+    import Image
+import pytesseract
 
 
 def extension_fichier(nom):
@@ -28,7 +34,17 @@ def extension_fichier(nom):
     return extension
 
 
+def extraction_pyocr(image):
+    texte = pytesseract.image_to_string(Image.open(image), lang='eng')
+    print(texte)
+    return texte
+
+
 """
+with Img(filename='tickets_olswski.pdf', resolution=300) as img:
+    img.compression_quality = 99
+    img.save(filename='image_name.jpg')
+
 def ExtractionPDF_PyPDF2(pdfFileObjPyPDF2,TitreTextePyPDF2):
     print('---- > Ouverture du fichier PdF avec le moteur PyPDF2')
     #erreurPdF=0

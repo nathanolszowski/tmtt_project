@@ -29,56 +29,56 @@ from nltk.stem.snowball import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 
 
-def supp_majuscule(texte):
-    """
-    Permet le passage de tout le texte en minuscule
-    :param : <str> Le texte à parser
-    :return : <str> Le texte sans la casse
-    """
-    texte = texte.lower()
-    return texte
+class Traitement:
+    def __init__(self, n):
+        self.x = n
+        self.supp_maj()
+        self.supp_nb()
+        self.supp_ponc()
+        self.supp_espace()
+        self.token()
+        print(self.x)
 
+    def supp_maj(self):
+        """
+        Permet le passage de tout le texte en minuscule
+        :param : <str> Le texte à parser
+        :return : <str> Le texte sans la casse
+        """
+        self.x = self.x.lower()
 
-def supp_nombre(texte):
-    """
-    Permet la suppression de tous les nombres du texte
-    :param : <str> Le texte à parser
-    :return : <str> Le texte sans les nombres
-    """
-    texte = re.sub(r'\d+', '', texte)
-    return texte
+    def supp_nb(self):
+        """
+        Permet la suppression de tous les nombres du texte
+        :param : <str> Le texte à parser
+        :return : <str> Le texte sans les nombres
+        """
+        self.x = re.sub(r'\d+', '', self.x)
 
+    def supp_ponc(self):
+        """
+        Permet la suppression de toute la ponctuation du texte
+        :param : <str> Le texte à parser
+        :return : <str> Le texte sans la ponctuation
+        """
+        table = str.maketrans({key: None for key in string.punctuation})
+        self.x = self.x.translate(table)
 
-def supp_ponctuation(texte):
-    """
-    Permet la suppression de toute la ponctuation du texte
-    :param : <str> Le texte à parser
-    :return : <str> Le texte sans la ponctuation
-    """
-    table = str.maketrans({key: None for key in string.punctuation})
-    texte = texte.translate(table)
-    return texte
+    def supp_espace(self):
+        """
+        Permet la suppression de tous les espaces du texte
+        :param : <str> Le texte à parser
+        :return : <str> Le texte sans les espaces inutiles/invisibles
+        """
+        self.x = self.x.strip()
 
-
-def supp_espace(texte):
-    """
-    Permet la suppression de tous les espaces du texte
-    :param : <str> Le texte à parser
-    :return : <str> Le texte sans les espaces inutiles/invisibles
-    """
-    texte = texte.strip()
-    return texte
-
-
-def token(texte):
-    """ 
-    Permet la tokenization de tout le texte
-    :param : <str> Le texte à parser
-    :return : <list> Le texte tokenisé
-    """
-    texte = word_tokenize(texte)
-    print(texte)
-    return texte
+    def token(self):
+        """
+        Permet la tokenization de tout le texte
+        :param : <str> Le texte à parser
+        :return : <list> Le texte tokenisé
+        """
+        self.x = word_tokenize(self.x)
 
 
 def stopword(texte):
